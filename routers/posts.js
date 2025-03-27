@@ -1,5 +1,5 @@
 const express = require("express")
-const router = express.router()
+const router = express.Router()
 
 router.get("/app", (req, res) => {
     res.send("lista dei post")
@@ -19,8 +19,8 @@ router.patch("/app:id", (req, res) => {
 
 })
 
-router.delete("/app:id", (req, res) {
+router.delete("/app:id", (req, res) => {
     res.send("eliminazione del post" + req.params.id)
 })
 
-module.exports = routers
+module.exports = router
