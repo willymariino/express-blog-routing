@@ -1,5 +1,5 @@
 const express = require("express")
-const router = express.Router()
+const router = express.router()
 
 router.get("/app", (req, res) => {
     res.send("lista dei post")
