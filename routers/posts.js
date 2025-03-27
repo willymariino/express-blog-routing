@@ -23,4 +23,4 @@ router.delete("/app:id", (req, res) {
     res.send("eliminazione del post" + req.params.id)
 })
 
-module.exports = router
+module.exports = routers
